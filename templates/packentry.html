@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<h1>{{ pack[1] }}</h1>
+</head>
+<body>
+    {% for pack in songs %}
+    <table>
+        <tr>
+            <td><a href="{{url_for('songs', id = pack[0])}}">{{pack[1]}}</a></td>          
+        </tr>
+    </table>
+    {% endfor %}
+</body>
+</html>
+{% endblock %}

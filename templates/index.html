@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>
+   Arcaea
+</h1>
+<body>
+  {% for songs in Songs %}
+  <div class="table">
+  <a href="{{url_for('songs', id = songs[0])}}"><table> 
+              <!--Comment from Sam: I hope you have thick skin because Mr Dunford will beat you for using
+                  this table. Say goodbye to this cruel world.-->
+    <tr>
+      <td>Song</td>
+      <td>{{ songs[1] }}</td>
+  </table></a>
+</div>
+  {% endfor %}
+</body>
+{% endblock %}

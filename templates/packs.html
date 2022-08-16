@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>
+        Packs
+    </h1>
+    <body>
+    {% for id in packs %}
+    <table>
+        <tr>
+            <td>
+                <a href="{{url_for('packentry', id = id[0])}}">{{ id[1] }}</a>
+            </td>
+        </tr>
+    </table>
+    {% endfor %}
+    </body>
+    </html>
+{% endblock %}
