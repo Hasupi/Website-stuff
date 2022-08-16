@@ -1,10 +1,13 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="myriad">
     <h1>
         Packs
     </h1>
+</div>
     <body>
     {% for id in packs %}
+<div class="table">
     <table>
         <tr>
             <td>
@@ -12,6 +15,7 @@
             </td>
         </tr>
     </table>
+</div>
     {% endfor %}
     </body>
     </html>

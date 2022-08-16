@@ -1,7 +1,23 @@
+@font-face {
+    font-family: Myriad;
+    src: url(MYRIADPRO-REGULAR.woff);
+}
+
+@font-face {
+    font-family: Kings Gambit;
+    src: url(kingsgmb.woff);
+}
+
+.myriad h1 {
+    font-family: 'Myriad';
+}
+
+
 h1 {
     /* background-color: #171926;
     color: #79d0ea; */
     text-align: center;
+    font-family: 'Kings Gambit'
 }
 
 body {
@@ -9,6 +25,7 @@ body {
     margin: auto;
     padding: 0px;
     text-align: center;
+    font-family: 'Myriad';
 }
 
 table {
@@ -58,4 +75,5 @@ a {
 .table {
     width: 20%;
     margin: auto;
+    text-align: center  ;
 }

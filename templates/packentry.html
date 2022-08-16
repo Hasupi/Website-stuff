@@ -3,15 +3,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<h1>{{ pack[1] }}</h1>
+    <div class="myriad">
+        <h1>{{ pack[1] }}</h1>
+</div>
 </head>
 <body>
     {% for pack in songs %}
+    <div class="table">
     <table>
         <tr>
             <td><a href="{{url_for('songs', id = pack[0])}}">{{pack[1]}}</a></td>          
         </tr>
     </table>
+    </div>
     {% endfor %}
 </body>
 </html>
