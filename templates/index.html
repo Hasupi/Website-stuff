@@ -5,14 +5,14 @@
 </h1>
 <body>
   {% for songs in Songs %}
-  <div class="table">
-  <a href="{{url_for('songs', id = songs[0])}}"><table> 
+  <!-- <div class="table"> -->
+  <a href="{{url_for('songs', id = songs[0])}}"><ul> 
               <!--Comment from Sam: I hope you have thick skin because Mr Dunford will beat you for using
                   this table. Say goodbye to this cruel world.-->
     <tr>
       <td>{{ songs[1] }}</td>
-  </table></a>
-</div>
+    </ul></a>
+<!-- </div> -->
   {% endfor %}
 </body>
 {% endblock %}

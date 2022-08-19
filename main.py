@@ -36,7 +36,7 @@ def songs(id):
     cur.execute("SELECT * FROM Song WHERE id = ?", (id,))
     song = cur.fetchone()
     return render_template("song.html", song=song)
-
+    
 @app.errorhandler(404)
 def die(e):
     return render_template("404.html"), 404

@@ -10,11 +10,11 @@
 <body>
     {% for pack in songs %}
     <div class="table">
-    <table>
+    <ul>
         <tr>
             <td><a href="{{url_for('songs', id = pack[0])}}">{{pack[1]}}</a></td>          
         </tr>
-    </table>
+    </ul>
     </div>
     {% endfor %}
 </body>
