@@ -8,15 +8,15 @@
 </div>
 </head>
 <body>
-    {% for pack in songs %}
     <div class="table">
+    {% for pack in songs %}
     <ul>
         <tr>
             <td><a href="{{url_for('songs', id = pack[0])}}">{{pack[1]}}</a></td>          
         </tr>
     </ul>
-    </div>
     {% endfor %}
+    </div>
 </body>
 </html>
 {% endblock %}

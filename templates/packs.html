@@ -7,14 +7,14 @@
 </div>
     <body>
     {% for id in packs %}
-<div class="table">
-    <table>
+<div class="list">
+    <ul>
         <tr>
             <td>
                 <a href="{{url_for('packentry', id = id[0])}}">{{ id[1] }}</a>
             </td>
         </tr>
-    </table>
+    </ul>
 </div>
     {% endfor %}
     </body>
