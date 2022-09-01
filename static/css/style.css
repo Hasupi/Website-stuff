@@ -8,17 +8,12 @@
     src: url(kingsgmb.woff);
 }
 
-.myriad h1 {
-    font-family: 'Myriad';
-}
-
-
 h1 {
     /* background-color: #171926;
     color: #79d0ea; */
     text-align: center;
-    font-family: 'Kings Gambit';
-    font-size: 5em;
+    font-family: 'Myriad';
+    font-size: 24px;
 }
 
 body {
@@ -31,8 +26,6 @@ body {
 
 ul {
     /* color: #79d0ea; */
-    /* display: flex;
-    flex-direction: row; */
     text-align: center;
     text-decoration: none;
     margin: 10px;
@@ -51,8 +44,7 @@ ul {
     padding: auto;
     overflow: hidden;
     background-color: grey;
-    border-bottom: 2px solid black;
-}
+    border-bottom: 2px solid black;}
 
 .topnav li {
     float: left;
@@ -77,10 +69,4 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-.table table {
-    width: 20%;
-    margin: auto;
-    text-align: center  ;
 }
