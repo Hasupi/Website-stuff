@@ -13,25 +13,25 @@ h1 {
     color: #79d0ea; */
     text-align: center;
     font-family: 'Myriad';
-    font-size: 24px;
+    font-size: 36px;
 }
 
 body {
-    /* background-color:#171926; */
+    background-color:#0d1117;
     margin: auto;
-    padding: 0px;
+    padding: 5px;
     text-align: center;
     font-family: 'Myriad';
+    color: #c2c2c2;
 }
 
-ul {
+ul {    
     /* color: #79d0ea; */
     text-align: center;
     text-decoration: none;
-    margin: 10px;
+    margin: 8px;
     font-size: 20px;
-    list-style-type: none;
-    padding: 0px;
+    list-style-type: none;   
 }
 
 .topnav ul {
@@ -43,7 +43,7 @@ ul {
     margin: auto;
     padding: auto;
     overflow: hidden;
-    background-color: grey;
+    background-color: #0a152c;
     border-bottom: 2px solid black;}
 
 .topnav li {
@@ -64,9 +64,38 @@ ul {
 }
 
 .topnav a:hover {
-    background-color: blue;
+    background-color: #7b42ff;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
+
+.list ul {
+    border: 3px solid #7b42ff;
+    border-style: outset;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.display-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 25px;
+}
+
+.item {
+    padding: 10px;
+    text-align: center;
+}
+
+.zoom {
+    transition: transform .15s;
+}
+
+.zoom:hover {
+    transform: scale(1.1); 
+}
+

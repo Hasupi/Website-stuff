@@ -30,9 +30,12 @@ def packentry(id):
 
 @app.route("/packs")
 def packs():
+    cur.execute("SELECT * Image FROM Packs")
+    image = cur.fetchall()
     cur.execute("SELECT * FROM Packs")
     packs = cur.fetchall()
-    return render_template("packs.html", packs=packs)
+    print(id)
+    return render_template("packs.html", packs=packs, image = image)
 
 
 @app.route("/songs/<int:id>")
@@ -49,4 +52,5 @@ def die(e):
 
 if __name__ == "__main__":
     app.run(debug="true", host="0.0.0.0", port="8000")
+    
     

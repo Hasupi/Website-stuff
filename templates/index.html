@@ -3,14 +3,17 @@
 <h1>
    ARCAEA
 </h1>
+<div class="display-grid">
 <body>
   {% for songs in Songs %}
-  <div class="list">
-  <a href="{{url_for('songs', id = songs[0])}}"><ul> 
-    <tr>
-      <td>{{ songs[1] }}</td>
-    </ul></a>
+  <div class="list zoom">
+    <ul> 
+      <tr>
+        <td><a href="{{url_for('songs', id = songs[0])}}">{{ songs[1] }}</a></td>
+        </tr>
+      </ul>
 </div>
   {% endfor %}
 </body>
+</div>
 {% endblock %}
