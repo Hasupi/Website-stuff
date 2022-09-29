@@ -10,8 +10,8 @@
     {% for pack in songs %}
     <div class="list zoom">
     <ul>
-        {% if songs[2] %}
-        <img src="{{songs[15]}}">
+        {% if songs[15] %}
+        <img src="{{songs[0][15]}}">
         {% endif %}
     <a href="{{url_for('songs', id = pack[0])}}">{{pack[1]}}</a>  
 </ul>      

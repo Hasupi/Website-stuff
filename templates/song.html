@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
-{% block content %}
-    <head>
+{% block content %}  
+  <head class="song">
+      {% if song[15] %}
+        <img src="{{song[15]}}">
+        {% endif %}
         <h1>{{ song[1] }}</h1>
     </head>
     <body>

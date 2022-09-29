@@ -74,7 +74,7 @@ a {
 .list {
     margin: 8px;
     border: 3px solid #7b42ff;
-    border-style: outset;
+    border-style: inset;
     border-radius: 5px;
 }
 
@@ -113,6 +113,7 @@ a {
 
 .list:hover, .list:active {
     border-color: #0a152c;
+    border-style: outset;
 }
 
 .list a {
@@ -124,4 +125,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.song {
+    width:auto;
+    text-align:center;
+    padding:20px;
+}
+
+img {
+    max-width:100%;
+    height:auto;
 }
