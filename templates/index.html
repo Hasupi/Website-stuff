@@ -6,7 +6,7 @@
 <div class="display-grid">
 <body>
   {% for songs in Songs %}
-    <div class="list zoom height2">
+    <div class="list zoom height2 song">
       <a href="{{url_for('songs', id = songs[0])}}">
       <ul>
         {% if songs[15] %}

@@ -8,13 +8,15 @@
 <div class="display-grid">
 <body>
     {% for pack in songs %}
-    <div class="list zoom">
+    <div class="list zoom song">
+        <a href="{{url_for('songs', id = pack[0])}}">
     <ul>
-        {% if songs[15] %}
-        <img src="{{songs[0][15]}}">
+        {% if songs[0] %}
+        <img src="{{pack[15]}}">
         {% endif %}
     <a href="{{url_for('songs', id = pack[0])}}">{{pack[1]}}</a>  
-</ul>      
+</ul> 
+</a>     
 </div>
     {% endfor %}
 </body>
