@@ -25,6 +25,7 @@ def packentry(id):
     packentry = cur.fetchone()
     cur.execute("SELECT * FROM Song WHERE Packs = ?", (id,))
     songs = cur.fetchall()
+    print(songs)
     return render_template("packentry.html", pack = packentry, songs=songs)
 
 
