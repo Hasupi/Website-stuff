@@ -5,16 +5,17 @@
     </h1>
     <div class="display-grid">
     <body>
-    {% for id in packs %}
-<div class="list zoom">
+    {% for pack in packs %}
+<div class="list zoom height">
+    <a href="{{url_for('packentry', id = pack[0])}}">
     <ul>
-        <tr>
-            <td>
-                <img src="{{image[0]}}">
-                <a href="{{url_for('packentry', id = id[0])}}">{{ id[1] }}</a>
-            </td>
-        </tr>
+        {% if pack[2] %}
+        <img src="{{pack[2]}}">
+        {% endif %}
+        <div></div>
+        <a href="{{url_for('packentry', id = pack[0])}}">{{ pack[1] }}</a>
     </ul>
+</a>
 </div>
     {% endfor %}
     </body>

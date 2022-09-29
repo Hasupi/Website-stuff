@@ -29,9 +29,8 @@ ul {
     /* color: #79d0ea; */
     text-align: center;
     text-decoration: none;
-    margin: 8px;
     font-size: 20px;
-    list-style-type: none;   
+    list-style-type: none;
 }
 
 .topnav ul {
@@ -72,12 +71,16 @@ a {
     color: inherit;
 }
 
-.list ul {
+.list {
+    margin: 8px;
     border: 3px solid #7b42ff;
     border-style: outset;
     border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+}
+
+.list > * {
+    font-size: 20px;
+    padding: 8px;
 }
 
 .display-grid {
@@ -99,3 +102,26 @@ a {
     transform: scale(1.1); 
 }
 
+.height ul {
+    height: 135px;
+}
+
+.height2 ul {
+    height: 55px;
+    text-align: center;
+}
+
+.list:hover, .list:active {
+    border-color: #0a152c;
+}
+
+.list a {
+    display: block;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

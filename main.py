@@ -30,12 +30,12 @@ def packentry(id):
 
 @app.route("/packs")
 def packs():
-    cur.execute("SELECT * Image FROM Packs")
-    image = cur.fetchall()
-    cur.execute("SELECT * FROM Packs")
-    packs = cur.fetchall()
-    print(id)
-    return render_template("packs.html", packs=packs, image = image)
+    cur.execute("""SELECT Packs.id,
+                        pack_name,
+                        Image
+                    From Packs""")
+    p = cur.fetchall()
+    return render_template("packs.html", packs=p,)
 
 
 @app.route("/songs/<int:id>")

@@ -6,13 +6,11 @@
 <div class="display-grid">
 <body>
   {% for songs in Songs %}
-  <div class="list zoom">
-    <ul> 
-      <tr>
-        <td><a href="{{url_for('songs', id = songs[0])}}">{{ songs[1] }}</a></td>
-        </tr>
-      </ul>
-</div>
+    <div class="list zoom height2">
+      <a href="{{url_for('songs', id = songs[0])}}">
+        {{ songs[1] }}
+      </a>
+    </div>
   {% endfor %}
 </body>
 </div>
